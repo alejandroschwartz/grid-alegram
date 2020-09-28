@@ -1,16 +1,169 @@
-body {
+body { 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.followers-list {
+.header-list {
     border: 2px solid red;
-    /* margin-bottom: 28px; */
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 90px 280px 90px ;
+    grid-template-rows: 40px 40px auto 150px;
+    grid-gap: 10px;
+}
+
+/* .header {
+    border: 2px solid green;
+} */
+
+.header:nth-of-type(1) {
+    /* background-color: blue; */
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+    display: flex;
+    justify-content: center;
+}
+.header:nth-of-type(2) {
+    /* background-color: red; */
+    grid-column: 2 / span 3;
+}
+.header:nth-of-type(3) {
+    /* background-color: green; */
+    grid-column: 5 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header:nth-of-type(4) {
+    /* background-color: yellow; */
+    grid-column: 2 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header:nth-of-type(5) {
+    /* background-color: blueviolet; */
+    grid-column: 3 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header:nth-of-type(6) {
+    /* background-color: orange; */
+    grid-column: 2 / span 4;
+}
+.header:nth-of-type(7) {
+    /* background-color: orange; */
+    grid-column: 1 / span 5;
+    display: grid;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 140px 140px 140px 140px 140px;
+    grid-gap: 20px;
+}
+.header__history:nth-of-type(1) {
+    height: 90px;
+    width: 90px;
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header__history:nth-of-type(2) {
+    height: 90px;
+    width: 90px;
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header__history:nth-of-type(3) {
+    height: 90px;
+    width: 90px;
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header__history:nth-of-type(4) {
+    height: 90px;
+    width: 90px;
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header__history:nth-of-type(5) {
+    height: 90px;
+    width: 90px;
+    border: 2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    /* object-fit: cover; */
+}
+
+.header__figure {
+    margin: 0;
+    border: 2px solid red;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header__figure img {
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+}
+.header__history img {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+}
+
+.header h1 {
+    margin: 0;
+}
+.header a  {
+    margin: 0;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+.header p {
+    line-height: 40px;
+}
+.header__options {
+    border: 2px solid lightslategray;
+    border-radius: 8px;
+    padding: 6px 6px;
+    background: rgb(55, 158, 192);
+}
+.header__follow {
+    border: 2px solid lightslategray;
+    border-radius: 4px;
+    padding: 6px 45px;
+    background-color: rgb(55, 158, 192);
+}
+.header__more {
+    border: 2px solid lightslategray;
+    border-radius: 4px;
+    padding: 6px 13px;
+    background-color: rgb(55, 158, 192);
+}
+
+
+
+.followers-list {
+    /* border: 2px solid green; */
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(3, 311px);
-    /* max-width: 900px; */
     justify-content: center;
-    background: lightblue;
+    /* background: lightblue; */
 }
 
 .followers {
@@ -20,12 +173,13 @@ body {
 }
 
 .post-list {
+    margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3, 293px);
     /* grid-template-columns: auto; */
     justify-content: center;
     grid-gap: 28px;
-    background: chartreuse;
+    /* background: chartreuse; */
 }
 
 .post {
@@ -77,20 +231,26 @@ body {
     display: inline-block;
 }
 
+.nav-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+}
 
 .nav-list {
     margin: 0;
+    border-top: 2px solid lightgray;
     /* margin-top: 28px; */
     /* max-width: 900px; */
     display: grid;
     grid-template-columns: repeat(5, 187px);
     justify-content: center;
-    background: lightblue;
+    background: white;
 }
 
 .nav-a {
     margin: 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 45px;
 
     display: flex;
@@ -104,10 +264,10 @@ body {
     align-items: center; */
 }
 
-.nav-figure img {
-    /* display: flex;
-    align-items: center; */
-}
+/* .nav-figure img {
+    display: flex;
+    align-items: center; 
+} */
 
 
 
