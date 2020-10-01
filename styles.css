@@ -4,7 +4,6 @@ body {
 }
 
 .header-list {
-    border: 2px solid red;
     margin-top: 50px;
     display: grid;
     justify-content: center;
@@ -13,48 +12,37 @@ body {
     grid-gap: 10px;
 }
 
-/* .header {
-    border: 2px solid green;
-} */
-
 .header:nth-of-type(1) {
-    /* background-color: blue; */
     grid-column: 1 / span 1;
     grid-row: 1 / span 3;
     display: flex;
     justify-content: center;
 }
 .header:nth-of-type(2) {
-    /* background-color: red; */
     grid-column: 2 / span 3;
 }
 .header:nth-of-type(3) {
-    /* background-color: green; */
     grid-column: 5 / span 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header:nth-of-type(4) {
-    /* background-color: yellow; */
     grid-column: 2 / span 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header:nth-of-type(5) {
-    /* background-color: blueviolet; */
     grid-column: 3 / span 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header:nth-of-type(6) {
-    /* background-color: orange; */
     grid-column: 2 / span 4;
 }
 .header:nth-of-type(7) {
-    /* background-color: orange; */
     grid-column: 1 / span 5;
     display: grid;
     display: grid;
@@ -65,43 +53,36 @@ body {
 .header__history:nth-of-type(1) {
     height: 90px;
     width: 90px;
-    border: 2px solid red;
     border-radius: 50%;
     overflow: hidden;
 }
 .header__history:nth-of-type(2) {
     height: 90px;
     width: 90px;
-    border: 2px solid red;
     border-radius: 50%;
     overflow: hidden;
 }
 .header__history:nth-of-type(3) {
     height: 90px;
     width: 90px;
-    border: 2px solid red;
     border-radius: 50%;
     overflow: hidden;
 }
 .header__history:nth-of-type(4) {
     height: 90px;
     width: 90px;
-    border: 2px solid red;
     border-radius: 50%;
     overflow: hidden;
 }
 .header__history:nth-of-type(5) {
     height: 90px;
     width: 90px;
-    border: 2px solid red;
     border-radius: 50%;
     overflow: hidden;
-    /* object-fit: cover; */
 }
 
 .header__figure {
     margin: 0;
-    border: 2px solid red;
     border-radius: 50%;
     height: 140px;
     width: 140px;
@@ -152,10 +133,7 @@ body {
     background-color: rgb(55, 158, 192);
 }
 
-
-
 .followers-list {
-    /* border: 2px solid green; */
     border-top: 2px solid lightgray;
     border-bottom: 2px solid lightgray;
     margin-top: 20px;
@@ -163,11 +141,9 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 311px);
     justify-content: center;
-    /* background: lightblue; */
 }
 
 .followers {
-    border: 2px solid red;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -176,28 +152,21 @@ body {
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(3, 293px);
-    /* grid-template-columns: auto; */
     justify-content: center;
     grid-gap: 28px;
-    /* background: chartreuse; */
 }
 
 .post {
-    /* border: 2px solid green; */
     cursor: pointer;
     position: relative;
     display: block;
-    /* overflow: hidden; */
-    /* width: 300px; */
 }
 
 .post-images {
-    border: 2px solid red;
     margin: 0;
 }
 
 .post-images img {
-    border: 2px solid red;
     height: 293px;
     width: 100%;
     vertical-align: top;
@@ -240,8 +209,6 @@ body {
 .nav-list {
     margin: 0;
     border-top: 2px solid lightgray;
-    /* margin-top: 28px; */
-    /* max-width: 900px; */
     display: grid;
     grid-template-columns: repeat(5, 187px);
     justify-content: center;
@@ -250,9 +217,7 @@ body {
 
 .nav-a {
     margin: 0;
-    /* border: 2px solid red; */
     height: 45px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,14 +225,8 @@ body {
 
 .nav-figure {
     margin: 0;
-    /* display: flex;
-    align-items: center; */
-}
 
-/* .nav-figure img {
-    display: flex;
-    align-items: center; 
-} */
+}
 
 
 
@@ -290,6 +249,79 @@ body {
     .nav-list {
         grid-template-columns: repeat(5, 1fr);
     }
+
+    .header h1 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .header a  {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .header p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .header__options {
+        padding: 4px 4px;
+    }
+
+    .header__follow {
+        padding: 4px 12px;
+    }
+
+    .header__more {
+        padding: 4px 6px;
+    }
+
+    .header-list {
+        grid-template-columns: 90px 70px 60px 40px 80px;
+        grid-template-rows: 35px 35px auto 100px;
+    }
+
+    .header:nth-of-type(7) {
+        grid-template-columns: 80px 80px 80px 80px 80px;
+        grid-gap: 10px;
+    }
+        
+    .header__figure {
+        height: 80px;
+        width: 80px;
+    }
+
+    .header__figure img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .header__history:nth-of-type(1) {
+        height: 70px;
+        width: 70px;
+    }
+    .header__history:nth-of-type(2) {
+        height: 70px;
+        width: 70px;
+    }
+    .header__history:nth-of-type(3) {
+        height: 70px;
+        width: 70px;
+    }
+    .header__history:nth-of-type(4) {
+        height: 70px;
+        width: 70px;
+    }
+    .header__history:nth-of-type(5) {
+        height: 70px;
+        width: 70px;
+    }
+
+    .header__history img {
+        height: 70px;
+        width: 70px;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -311,6 +343,47 @@ body {
     .nav-list {
         grid-template-columns: repeat(5, 93px);
     }
+
+    .header h1 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+    .header p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .header__options {
+        padding: 4px 4px;
+    }
+    .header__follow {
+        padding: 4px 12px;
+    }
+    .header__more {
+        padding: 4px 6px;
+    }
+
+    .header-list {
+        grid-template-columns: 110px 110px 60px 60px 80px;
+    }
+
+    .header:nth-of-type(7) {
+        grid-template-columns: 90px 90px 90px 90px 90px;
+    }
+        
+    .header__figure {
+        height: 90px;
+        width: 90px;
+    }
+
+    .header__figure img {
+        height: 90px;
+        width: 90px;
+        object-fit: cover;
+    }
+    .header__history img {
+        height: 90px;
+        width: 90px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -331,5 +404,13 @@ body {
 
     .nav-list {
         grid-template-columns: repeat(5, 150px);
+    }
+
+    .header-list {
+        grid-template-columns: 180px 180px 80px 140px 80px;
+    }
+
+    .header:nth-of-type(7) {
+        grid-template-columns: 110px 110px 110px 110px 110px;
     }
 }
